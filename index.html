@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="menu">
+            <div class="menu-item" data-form-id="adding-book" data-table-id="books-table">Books</div>
+            <div class="menu-item" data-form-id="adding-visitor" data-table-id="visitors-table">Visitors</div>
+            <div class="menu-item" data-form-id="adding-card" data-table-id="cards-table">Cards</div>
+        </div>
+
+        <div class="add-new">
+            <span id="all-items">All</span>
+
+            <div class="right">
+                <button id="new-item">
+                    <span id="add-new-title">New </span>
+                </button>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="items-tabe">
+            <table id="books-table" class="hidden">
+                <tr class="table-items-name">
+                    <td>Id</td>
+                    <td>Title</td>
+                    <td>Autor</td>
+                    <td>Release year</td>
+                    <td>Publisher name</td>
+                    <td>Page quantity</td>
+                    <td>Copies quantity</td>
+                </tr>
+            </table>
+
+            <table id="visitors-table" class="hidden">
+                <tr class="table-items-name">
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Phone</td>
+                </tr>
+            </table>
+
+            <table id="cards-table" class="hidden">
+                <tr class="table-items-name">
+                    <td>Id</td>
+                    <td>Visitor</td>
+                    <td>Book</td>
+                    <td>Borrow date</td>
+                    <td>Return date</td>
+                </tr>
+            </table>
+
+        </div>
+    </div><!-- content -->
+
+    <div id="adding-block" class="hidden">
+
+        <form id="adding-book" class="hidden">
+            <div>
+                <span>Title:</span>
+                <input type="text" name="title" id="title">
+            </div>
+
+            <div>
+                <span>Autor:</span>
+                <input type="text" name="autor" id="autor">
+            </div>
+
+            <div>
+                <span>Release year:</span>
+                <input type="number" name="release-year" id="release-year">
+            </div>
+
+            <div>
+                <span>Publisher:</span>
+                <input type="text" name="publisher" id="publisher">
+            </div>
+
+            <div>
+                <span>Pages count:</span>
+                <input type="number" name="pages-count" id="pages-count">
+            </div>
+
+            <div>
+                <span>Copies count:</span>
+                <input type="number" name="copies-count" id="copies-count">
+            </div>
+
+            <button type="submit">Add</button>
+        </form>
+
+        <form id="adding-visitor" class="hidden">
+            <div>
+                <span>Full name:</span>
+                <input type="text" name="full-name" id="full-name">
+            </div>
+
+            <div>
+                <span>Phone number:</span>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <button type="submit">Add</button>
+        </form>
+
+        <form id="adding-card" class="hidden">
+            <div>
+                <span>Visitor:</span>
+                <input type="text" name="visitor">
+            </div>
+
+            <div>
+                <span>Book:</span>
+                <input type="text" name="book" id="book">
+            </div>
+
+            <div>
+                <span>Borrow date:</span>
+                <input type="text" name="borrow-date" id="borrow-date" value="Not necessary">
+            </div>
+
+            <div>
+                <span>Return date:</span>
+                <input type="text" name="return-date" id="return-date" value="Not necessary">
+            </div>
+            <button type="submit">Add</button>
+        </form>
+
+    </div>
+    <script src="https://use.fontawesome.com/a253d66de5.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>
